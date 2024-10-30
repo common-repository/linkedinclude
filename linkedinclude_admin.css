@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+	=Admin
+--------------------------------------------------------------*/
+#linkedinclude {
+	position: relative;
+}
+#linkedinclude > h1 > span {
+	font-weight: 400;
+}
+#linkedinclude section article {
+  background: #FFF;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #DADADA;
+  box-shadow: 1px 2px 0 #EAEAEA;
+  border-radius: 2px;
+}
+#linkedinclude section.instructions strong {
+	color: #B74327;
+}
+#linkedinclude section article.unchecked {
+	opacity: .4;
+}
+#linkedinclude aside {
+	float: right;
+	margin-top: 5px;
+	font-size: 11px;
+}
+#linkedinclude aside strong {
+    display: inline-block;
+    background: #868686;
+    color: #FFF;
+    padding: 2px 6px;
+    margin-left:6px;
+}
+#linkedinclude section article div {
+	position: relative;
+	padding-left: 250px;
+	min-height: 90px;
+	overflow: auto;
+	color: #444;
+}
+#linkedinclude section article div img {
+	position: absolute;
+	left: 0;
+}
+#linkedinclude section article div span.content {
+	margin-top: 0;
+}
+#linkedinclude section article div span.content small {
+	float: right;
+	font-weight: bold;
+	margin: 8px;
+	color: #999;
+}
+#linkedinclude section article h1 a.permalink::before {
+	content: url(img/show.png);
+	margin-right: 10px;
+}
+#linkedinclude section article.unchecked h1 a.permalink::before {
+	content: url(img/hide.png);
+	margin-right: 10px;
+}
+#linkedinclude section article.updating h1 a.permalink::before {
+	content: url(img/updating.gif);
+	margin-right: 10px;
+}
+#linkedinclude article h1 {
+  font-size: 23px;
+  font-weight: 400;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 15px;
+  margin: 5px 0 10px;
+}
+#linkedinclude article h1 input[type='checkbox'] {
+	margin-right: 10px;
+}
+#linkedinclude h1 a {
+	color: #222;
+	text-decoration: none;
+}
+#linkedinclude h1 cite {
+	font-size: 12px;
+}
+#linkedinclude form.linkedinclude_fetch {
+	font-weight: 600;
+	margin: 20px 10px 40px 0;
+	background: #DDD;
+	padding: 10px;
+	border:1px solid #999;
+}
+#linkedinclude form.linkedinclude_fetch input[type='text'] {
+	width: 400px;
+	font-weight: 400;
+}
+#linkedinclude form.linkedinclude_fetch input[type='submit'] {
+	background: #BD4825;
+  border: 0;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+#linkedinclude .msg {
+	  background: #638063;
+  padding: 10px 10px;
+  margin: 0 10px 10px 0;
+  color: #FFF;
+}
+#linkedinclude .msg.err {
+	background: #BD4825;
+}
+/*************************************************
+*	=Instructions
+**************************************************/
+#linkedinclude_instructions {
+	border: 1px solid #B74327;
+	padding: 10px;
+	background: white;
+	position:absolute;
+	width: 800px;
+	-webkit-transition: .75s ease-in-out;
+    -moz-transition: .75s ease-in-out;
+    -o-transition: .75s ease-in-out;
+    transition: .75s ease-in-out;
+    display: none;
+    z-index: 1;
+}
+#linkedinclude_instructions strong {
+	color: #B74327;
+}
+#linkedinclude_instructions div.litabs {
+    width: 822px;
+    display: block;
+    position: absolute;
+    margin: 11px 0 0 -11px;
+    height: 30px;
+}
+#linkedinclude_instructions div.litab {
+	display: block;
+	background: #B74327;
+	color: white;
+	font-weight: normal;
+	padding: 6px 10px;
+	float: right;
+	margin: 0 16px 0 0;
+	cursor: pointer;
+}
+#linkedinclude_instructions div.litab:after {
+	content: "\f347";
+	font-family: dashicons;
+	display: block;
+	float: right;
+	margin: 1px 0 0 4px;
+}
+#linkedinclude_instructions div.litab.expanded:after {
+	content: "\f343";
+	font-family: dashicons;
+}
+#linkedinclude_instructions div.litabs span {
+	font-size:22px;
+}
+/*************************************************
+*	=Footer
+**************************************************/
+#linkedinclude div.footer {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+	margin:30px 10px 10px 0;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	border-radius: 3px;
+	padding: 10px;
+}
+#linkedinclude div.footer > div {
+	flex-grow: 1;
+	flex-basis: 0;
+	margin-top: 12px;
+}
+#linkedinclude div.footer > div > a > img {
+	margin: 7px 0 4px 0;
+}
+#linkedinclude div.footer p {
+	font-size: 11px;
+	max-width: 90%;
+}
+#linkedinclude div.donate {
+	display:none;
+}
+footer small {
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 9px;
+	letter-spacing: 1px;
+}
+footer small a {
+	font-weight: bold;
+}
